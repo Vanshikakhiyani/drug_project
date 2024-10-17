@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Prediction</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .forecast-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .forecast-list li {
+            background-color: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .graph-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .graph-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Demand Prediction for {{ drug_name }}</h1>
+
+        <!-- Display error if any -->
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <!-- Form to select drug -->
+        <form id="demandForm" action="/predict_demand_with_graph" method="POST">
+            <div class="form-group">
+                <label for="drug_name">Enter Drug Name:</label>
+                <input type="text" id="drug_name" name="drug_name" required>
+            </div>
+            <button type="submit">Predict with Graph</button>
+        </form>
+
+        <!-- Display Forecasted Values -->
+        {% if forecast %}
+            <h2 class="mt-4">Forecasted Demand (Next 30 Days):</h2>
+            <ul class="forecast-list">
+                {% for value in forecast %}
+                    <li>{{ value }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- Display Graph -->
+        {% if graph_url %}
+            <div class="graph-container">
+                <h2>Stock Prediction Graph</h2>
+                <img src="data:image/png;base64,{{ graph_url }}" alt="Prediction Graph"/>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById("demandForm").addEventListener("submit", function(event) {
+            const drugNameInput = document.getElementById("drug_name").value;
+            if (!drugNameInput) {
+                event.preventDefault();
+                alert("Please enter a drug name.");
+            }
+        });
+    </script>
+</body>
+</html>

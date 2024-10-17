@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Align items in a row */
+            gap: 20px; /* Add spacing between items */
+        }
+        li {
+            /* Add any specific styles for list items if needed */
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px; /* Increase horizontal padding for larger buttons */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Pharmacy Management System</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('predict_demand') }}">Predict Demand</a></li>
+            <li><a href="{{ url_for('check_expiry') }}">Check Expiry</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2024 Pharmacy Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

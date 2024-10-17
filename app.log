@@ -1,0 +1,50 @@
+2024-10-11 00:32:58,988 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:32:58,988 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:32:58,990 INFO: * Restarting with stat
+2024-10-11 00:33:01,067 WARNING: * Debugger is active!
+2024-10-11 00:33:01,069 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:33:06,376 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:33:06,377 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:33:06,378 INFO: * Restarting with stat
+2024-10-11 00:33:08,013 WARNING: * Debugger is active!
+2024-10-11 00:33:08,015 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:33:15,333 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:33:15,333 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:33:15,334 INFO: * Restarting with stat
+2024-10-11 00:33:17,126 WARNING: * Debugger is active!
+2024-10-11 00:33:17,130 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:33:23,347 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:33:23,347 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:33:23,348 INFO: * Restarting with stat
+2024-10-11 00:33:24,876 WARNING: * Debugger is active!
+2024-10-11 00:33:24,878 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:34:17,650 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:34:17,650 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:34:17,651 INFO: * Restarting with stat
+2024-10-11 00:34:19,369 WARNING: * Debugger is active!
+2024-10-11 00:34:19,371 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:34:36,142 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:34:36,142 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:34:36,143 INFO: * Restarting with stat
+2024-10-11 00:34:37,680 WARNING: * Debugger is active!
+2024-10-11 00:34:37,682 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:35:38,708 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:35:38,708 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:35:38,709 INFO: * Restarting with stat
+2024-10-11 00:35:40,465 WARNING: * Debugger is active!
+2024-10-11 00:35:40,466 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:36:19,488 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 00:36:19,488 INFO:[33mPress CTRL+C to quit[0m
+2024-10-11 00:36:19,489 INFO: * Restarting with stat
+2024-10-11 00:36:21,590 WARNING: * Debugger is active!
+2024-10-11 00:36:21,592 INFO: * Debugger PIN: 123-895-798
+2024-10-11 00:37:32,492 INFO: * Detected change in 'c:\\Users\\hp\\OneDrive\\Desktop\\Drug project\\app.py', reloading
+2024-10-11 00:37:32,814 INFO: * Restarting with stat
